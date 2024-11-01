@@ -1,0 +1,18 @@
+services:
+#  database:
+#    image: 'postgres:17'
+#    ports:
+#      - '5446:5432'
+#    environment:
+#      - 'POSTGRES_USER=myuser'
+#      - 'POSTGRES_DB=mydatabase'
+#      - 'POSTGRES_PASSWORD=secret'
+  axon-server:
+    image: 'axoniq/axonserver'
+    ports:
+      - '8024:8024'
+      - '8124:8124'
+    environment:
+      - 'AXONIQ_AXONSERVER_STANDALONE=TRUE'
+      - 'AXONIQ_AXONSERVER_NAME=order'
+

@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: axon-cqrs-es
+#  datasource:
+#    url: jdbc:postgresql://127.0.0.1:5446/mydatabase
+#    username: myuser
+#    password: secret
+#    sql:
+#      init:
+#        mode: always
+
+axon:
+  serializer:
+    general: jackson
